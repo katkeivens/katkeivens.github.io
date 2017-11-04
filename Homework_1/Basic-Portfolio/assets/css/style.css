@@ -42,10 +42,11 @@ a {
 }
 
 li {
-	display: inline;
+	display: inline-block;
 	list-style: none;
 	border-right: 2px solid #ddd; 
 	padding-right: 10px;
+	transition: .5s
 }
 
 li:last-child {
@@ -88,7 +89,18 @@ p {
     text-align: center;
     color: #777777;
     flex: 1.25;
+}
 
+ul li a:hover {
+	background-color: #fff;
+	box-shadow: none;
+	color: #4aaaa5;
+}
+
+ul li a:active {
+	background-color: #4aaaa5;
+	box-shadow: 2px 2px #666;
+	color: #fff;
 }
 
 .container {
@@ -142,7 +154,7 @@ p {
 .bio-image {
 	flex: 1;
 	padding-right: 10px;
-	padding-left: 10px;
+	padding-left: 22px;
 }
 
 .aboutme {
@@ -161,7 +173,7 @@ p {
 }
 
 .contact-form {
-	padding-left: 5px;
+	padding-left: 20px;
 	line-height: 1.5;
 }
 
@@ -189,7 +201,7 @@ button:hover {
 
 button:active {
 	background-color: #4aaaa5;
-	box-shadow: 0 5px #666;
+	box-shadow: 5px 5px #666;
 	transform: translateY(4px);
 	color: #fff;
 }
@@ -201,6 +213,11 @@ input::placeholder {
 .contact {
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.contact img:hover {
+	transition: .5s;
+	transform: scale(1.1);
 }
 
 footer {
