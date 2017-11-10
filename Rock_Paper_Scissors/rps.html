@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    
+</head>
+<body>
+<script type="text/javascript">
+  
+var playagain = "Y";    
+while (playagain == "Y") {
+    var userPick = prompt("Choose: Rock, Paper or Scissors -- case-sensitive");
+    var botPick = Math.random();
+
+        if (botPick < 0.34 ) {
+            botPick = 'Paper';
+        } else if (botPick <= 0.67) {
+            botPick = 'Rock';
+        } else {
+            botPick = 'Scissors';
+        }
+
+            if (botPick === 'Paper') {
+                if (userPick === 'Paper') {
+                    alert('It\'s a tie!');
+                }
+                if (userPick === 'Rock') {
+                    alert('You lose')
+                }
+                if (userPick === 'Scissors') {
+                    alert('You win')
+                }
+            }
+
+            if (botPick === 'Rock') {
+                if (userPick === 'Rock') {
+                    alert('It\'s a tie!');
+                }
+                if (userPick === 'Paper') {
+                    alert('You win')
+                }
+                if (userPick === 'Scissors') {
+                    alert('You lose')
+                }
+            }
+
+            if (botPick === 'Scissors') {
+                if (userPick === 'Scissors') {
+                    alert('It\'s a tie!');
+                }
+                if (userPick === 'Paper') {
+                    alert('You lose')
+                }
+                if (userPick === 'Rock') {
+                    alert('You win')
+                }
+            }
+    var playagain = prompt('Do you want to play again, Y or N?');
+}
+
+</script>
+</body>
+</html>
