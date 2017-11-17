@@ -1,0 +1,39 @@
+body {
+	background-image: url('../images/patrioticBackground.jpeg');
+}
+
+.hangman {
+	 color: #CEF0D4; 
+	 font-family: cursive; 
+	 font-size: 75px; 
+	 font-weight: normal; 
+	 line-height: 48px; 
+	 margin: 65px 0 50px; 
+	 text-align: center; 
+	 text-shadow: 1px 1px 2px #082b34;
+}
+
+.usStates {
+	 color: #d54d7b; 
+	 font-family: cursive;  
+	 font-size: 95px; 
+	 line-height: 48px; 
+	 font-weight: normal; 
+	 margin-bottom: 0px; 
+	 margin-top: 40px; 
+	 text-align: center; 
+	 text-shadow: 0 1px 1px #fff;
+}
+
+.wrapper {
+	margin-top: 75px;
+}
+
+ p {
+	color: #FEFEFE;
+	font-size: 25px; 
+	font-family: 'roboto', serif; 
+	line-height: 10px; 
+	text-align: center; 
+	padding-top: 15px; 
+}
