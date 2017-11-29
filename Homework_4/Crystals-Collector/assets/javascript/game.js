@@ -2,10 +2,10 @@
 
 // global variables 
 
-var blueCrystal = Math.floor((Math.random() * 12) + 1);
-var greenCrystal = Math.floor((Math.random() * 12) + 1);;
-var redCrystal = Math.floor((Math.random() * 12) + 1);;
-var purpleCrystal = Math.floor((Math.random() * 12) + 1);;
+var blueCrystal = Math.floor((Math.random() * 13) + 1);
+var greenCrystal = Math.floor((Math.random() * 13) + 1);
+var redCrystal = Math.floor((Math.random() * 13) + 1);
+var purpleCrystal = Math.floor((Math.random() * 13) + 1);
 var totalScore = 0;
 var wins = 0;
 var losses = 0;
@@ -34,19 +34,19 @@ function resetGame() {
 	$('#totalScore').html(totalScore = 0);
 
 	$('.blue-gem').empty().off('click');
-	blueCrystal = Math.floor((Math.random() * 12) + 1);
+	blueCrystal = Math.floor((Math.random() * 13) + 1);
 	$('.blue-gem').data(blueCrystal);
 
 	$('.green-gem').empty().off('click');
-	greenCrystal = Math.floor((Math.random() * 12) + 1);
+	greenCrystal = Math.floor((Math.random() * 13) + 1);
 	$('.greenCrystal').data(greenCrystal);
 
 	$('.red-gem').empty().off('click');
-	redCrystal = Math.floor((Math.random() * 12) + 1);
+	redCrystal = Math.floor((Math.random() * 13) + 1);
 	$('.red-gem').data(redCrystal);
 
 	$('.purple-gem').empty().off('click');
-	purpleCrystal = Math.floor((Math.random() * 12) + 1);
+	purpleCrystal = Math.floor((Math.random() * 13) + 1);
 	$('.purple-gem').data(purpleCrystal);
 
 	console.log('blue ' + blueCrystal)
@@ -60,7 +60,7 @@ function startGame() {
 	setTimeout('resetMessages()', 3000);
 
 	// Generate a random number
-	var randomNumber = Math.floor((Math.random() * 120) + 19);
+	var randomNumber = Math.floor((Math.random() * 121) + 19);
 	$('#random-number').html(randomNumber);
 
 	// Assigning numbers to crystals
