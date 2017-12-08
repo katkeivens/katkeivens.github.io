@@ -1,0 +1,77 @@
+.answerButton {
+	width: 60%;
+	background-color: lightblue;
+	font-size: 20px;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+#startButton {
+	width: 60%;
+	background-color: lightblue;
+	font-size: 20px;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+#startOverButton {
+	width: 60%;
+	background-color: lightblue;
+	font-size: 20px;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.col-lg-12 {
+	background-color: rgb(6, 6, 6);
+}
+
+* {
+	font-family: sans-serif, cursive;
+}
+
+body {
+	background-image: url(../images/background.jpg);
+	color: rgb(229, 177, 58);
+}
+
+.container {
+	max-width: 800px;
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+	line-height: 35px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+ .subheader {
+	color: rgb(75, 213, 238);
+	font-weight: bold;
+	opacity: 0;
+	animation: fade 4s linear;
+	font-size: 30px;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  30%, 60% { opacity: 1 }
+}
+
+img {
+	width: 500px;
+	height: auto;
+	padding: 20px;
+	border:10px solid grey;
+	border-radius: 10px;
+}
