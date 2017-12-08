@@ -1,6 +1,6 @@
 var questions = [
 	{
-		questionTitle: 'How many Jedi are on the Jedi Council?',
+		questionTitle: '1) How many Jedi are on the Jedi Council?',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/jediCouncil.gif',
 		answers: [
@@ -11,7 +11,7 @@ var questions = [
 		]
 	},
 	{
-		questionTitle: 'Who is the only actor to star in ALL Star Wars episodes so far, and will again return for Ep. 8?',
+		questionTitle: '2) Who is the only actor to star in ALL Star Wars episodes so far, and will again return for Ep. 8?',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/anthonyDaniels.gif',
 		answers: [
@@ -22,7 +22,7 @@ var questions = [
 		]
 	},	
 	{
-		questionTitle: 'Rey is a scavenger from:',
+		questionTitle: '3) Rey is a scavenger from:',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/rey.gif',
 		answers: [
@@ -33,7 +33,7 @@ var questions = [
 		]
 	},
 	{
-		questionTitle: 'Who said, "It\'s a trap!"?',
+		questionTitle: '4) Who said, "It\'s a trap!"?',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/itsATrap.gif',
 		answers: [
@@ -44,7 +44,7 @@ var questions = [
 		]
 	},
 	{
-		questionTitle: 'Complete the classic line: "That\'s no moon; it\'s a...',
+		questionTitle: '5) Complete the classic line: "That\'s no moon; it\'s a...',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/noMoon.gif',
 		answers: [
@@ -55,7 +55,7 @@ var questions = [
 		]
 	},
 	{
-		questionTitle: 'Which US National Park played Endor in Return Of The Jedi?',
+		questionTitle: '6) Which US National Park played Endor in Return Of The Jedi?',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/redwood.gif',
 		answers: [
@@ -66,7 +66,7 @@ var questions = [
 		]
 	},
 	{
-		questionTitle: 'How many languages is C-3PO fluent in?',
+		questionTitle: '7) How many languages is C-3PO fluent in?',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/c3po.gif',
 		answers: [
@@ -77,7 +77,7 @@ var questions = [
 		]
 	},
 	{
-		questionTitle: 'What color is Mace Windu\'s lightsaber?',
+		questionTitle: '8) What color is Mace Windu\'s lightsaber?',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/purpleLightsaber.gif',
 		answers: [
@@ -88,7 +88,7 @@ var questions = [
 		]
 	},
 	{
-		questionTitle: 'In Episode VI: Return of the Jedi, the growls and sounds of the Rancor in Jabba\'s Palace were actually made by what animal?',
+		questionTitle: '9) In Episode VI: Return of the Jedi, the growls and sounds of the Rancor in Jabba\'s Palace were actually made by what animal?',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/dachshund.gif',
 		answers: [
@@ -99,7 +99,7 @@ var questions = [
 		]
 	},
 	{
-		questionTitle: 'Which species stole the plans to the Death Star?',
+		questionTitle: '10) Which species stole the plans to the Death Star?',
 		wrongImageUrl: 'assets/images/darkSide.gif',
 		correctImageUrl: 'assets/images/jediCouncil.gif',
 		answers: [
@@ -218,7 +218,7 @@ function answer(i) {
 
 		} else {
 			$('#message').html('<h2>Wrong! Try you must!</h2>');
-			$('#correctAnswer').html('<p>The correct answer was: ' + rightAnswer + '</p>');
+			$('#correctAnswer').html('<h3>The correct answer was: ' + rightAnswer + '</h3>');
 			$('#image').html('<img src="'+wrongImage+'"/>')
 			incorrectAnswers++;
 		}
@@ -244,9 +244,9 @@ function gameSummary() {
 	} else {
 		$('#summaryImage').html('<img src="assets/images/yoda.gif"/>')
 	}
-	$('#correctAnswers').html('<p>Correct Answers: '+ correctAnswers + '</p>');
-	$('#incorrectAnswers').html('<p>Incorrect Answers: ' + incorrectAnswers + '</p>');
-	$('#unanswered').html('<p>Unanswered Questions: '+ unanswered + '</p>')
+	$('#correctAnswers').html('<h3>Correct Answers: '+ correctAnswers + '</h3>');
+	$('#incorrectAnswers').html('<h3>Incorrect Answers: ' + incorrectAnswers + '</h3>');
+	$('#unanswered').html('<h3>Unanswered Questions: '+ unanswered + '</h3>')
 }
 
 

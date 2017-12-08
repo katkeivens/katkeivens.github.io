@@ -1,24 +1,24 @@
 .answerButton {
 	width: 60%;
 	background-color: lightblue;
-	font-size: 20px;
-	margin: 5px;
+	font-size: 30px;
+	margin: 10px;
 	border-radius: 10px;
 }
 
 #startButton {
 	width: 60%;
 	background-color: lightblue;
-	font-size: 20px;
-	margin: 5px;
+	font-size: 30px;
+	margin: 10px;
 	border-radius: 10px;
 }
 
 #startOverButton {
 	width: 60%;
 	background-color: lightblue;
-	font-size: 20px;
-	margin: 5px;
+	font-size: 30px;
+	margin: 10px;
 	border-radius: 10px;
 }
 
@@ -53,6 +53,10 @@ h1, h2 {
 
 h1 {
 	font-size: 60px;
+}
+
+h3 {
+	font-size: 25px;
 }
 
  .subheader {
