@@ -241,8 +241,10 @@ function gameSummary() {
 	$('.questionsDiv').hide();
 	if (correctAnswers <= 5) {
 		$('#summaryImage').html('<img src="assets/images/muchToLearn.gif"/>');
+		$('#summary').html('Uh Oh! Kylo Ren has found The Resistance!')
 	} else {
-		$('#summaryImage').html('<img src="assets/images/yoda.gif"/>')
+		$('#summaryImage').html('<img src="assets/images/medal.gif"/>')
+		$('#summary').html('Victory! You have successfully avoided Kylo Ren and saved The Resistance!')
 	}
 	$('#correctAnswers').html('<h3>Correct Answers: '+ correctAnswers + '</h3>');
 	$('#incorrectAnswers').html('<h3>Incorrect Answers: ' + incorrectAnswers + '</h3>');
