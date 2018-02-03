@@ -90,6 +90,7 @@ let hangmanGame = {
 					if (that.currentWord.wordMatch() === true) {
 						console.log(that.currentWord.showWord());
 						console.log("Congrats! You won!");
+						hangmanGame.startGame();
 					} else {
 						console.log("Guesses remaining: " + that.guessesRemaining);
 						console.log(that.currentWord.showWord());
@@ -102,6 +103,7 @@ let hangmanGame = {
 				} else if (that.guessesRemaining === 0) {
 					console.log("GAME OVER! YOU LOSE!");
 					console.log("The correct word was: " +  that.currentWord.word);
+					hangmanGame.startGame();
 				}
 			} else {
 				console.log("Letter has already been guessed. Guess again.");
