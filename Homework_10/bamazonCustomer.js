@@ -76,8 +76,9 @@ function getQuantity (items, productId) {
 		inquirer.prompt([
 			{
 				message: `How many ${item.product_name} would you like to buy?`,
-				name: 'quantity'
+				name: 'quantity',
 			}
+
 		]).then (answer =>{
 			if (answer.quantity > items[productId].stock_quantity) {
 				console.log('Insufficient quantity!');
@@ -92,7 +93,7 @@ function getQuantity (items, productId) {
 
 function updateQuantity (item, quantity) {
 	const updatedQuantity = item.stock_quantity - quantity;
-	connection.query("UPDATE products SET ? WHERE ?", 
+	connection.query(`UPDATE products SET stock_quantity = ${updatedQuantity} WHERE item_id = ${item.item_id}`, 
 		[
 			{
 				stock_quantity: updatedQuantity
