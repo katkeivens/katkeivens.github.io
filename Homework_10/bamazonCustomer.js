@@ -17,6 +17,7 @@ connection.connect( err => {
 	if (err) throw err;
 	console.log('Connected as id: ' + connection.threadId + '\n');
 	listItems();
+	getItems();
 });
 
 function listItems () {
@@ -29,7 +30,6 @@ function listItems () {
 			'\n\tQuantity: ' + item.stock_quantity + '\n')
 		})
 	});
-	getItems();
 }
 
 function getItems() {
@@ -67,8 +67,6 @@ function getItems() {
 }
 
 function getQuantity (items, productId) {
-	connection.query('SELECT * FROM products', (err, res) => {
-		if (err) throw err;	
 
 		productId--;
 		let item = items[productId];
@@ -88,7 +86,6 @@ function getQuantity (items, productId) {
 			}
 			
 		})
-	});
 }
 
 function updateQuantity (item, quantity) {
