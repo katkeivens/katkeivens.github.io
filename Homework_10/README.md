@@ -11,6 +11,9 @@ Then the app will ask which item id you'd like to purchase.  If the user puts in
 Once the user has entered a valid id, the app will ask how many they would like to purchase.  
 <img width="1432" alt="screen shot 2018-02-09 at 10 45 41 pm" src="https://user-images.githubusercontent.com/31232038/36059416-a1018070-0ded-11e8-827e-96de8f6d82ca.png">
 
+If there is insufficient inventory, the user will be notified and not be able to purchase the item(s).
+<img width="1436" alt="screen shot 2018-02-10 at 8 16 36 am" src="https://user-images.githubusercontent.com/31232038/36064107-d60d2a1a-0e3a-11e8-8ab0-7d8d6c8c7036.png">
+
 If there is enough inventory to fulfill the request, the app will notify the user that the purchase was successful and show the total cost of the item(s) they purchased.
 <img width="1427" alt="screen shot 2018-02-09 at 10 45 54 pm" src="https://user-images.githubusercontent.com/31232038/36059415-a0e42bec-0ded-11e8-8937-99f78a3d622e.png">
 
