@@ -2,8 +2,8 @@
 
 This node app is an Amazon-like storefront that utilizes MySQL.  This app takes orders from customers and depletes stock from the store's inventory.  If there is not enough inventory to fulfill the customer's request, it will return with an insufficient quantity.
 
-<<<<<<< HEAD
 =======
+
 At the beginning of the app, a full list of items will display
 <img width="1431" alt="screen shot 2018-02-09 at 10 44 56 pm" src="https://user-images.githubusercontent.com/31232038/36059413-a0bc2fca-0ded-11e8-9e50-a23fad58d602.png">
 
