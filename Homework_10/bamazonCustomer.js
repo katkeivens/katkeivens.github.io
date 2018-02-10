@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "*******",
+  password: "Fritz123",
   database: "bamazon"
 });
 
@@ -80,7 +80,7 @@ function getQuantity (items, productId) {
 		]).then (answer =>{
 			if (answer.quantity > items[productId].stock_quantity) {
 				console.log('Insufficient quantity!');
-				return;
+				getItems();
 			} else {
 				updateQuantity(item, answer.quantity);
 			}
