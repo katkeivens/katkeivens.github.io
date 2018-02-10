@@ -21,4 +21,3 @@ If there is enough inventory to fulfill the request, the app will notify the use
 
 SQL will update the inventory as items are purhased.
 <img width="966" alt="screen shot 2018-02-09 at 10 46 49 pm" src="https://user-images.githubusercontent.com/31232038/36059414-a0d05004-0ded-11e8-827b-4973e06573af.png">
->>>>>>> c948bd4e5cbdbcb32a57f60c42b3bc149329d7d3
