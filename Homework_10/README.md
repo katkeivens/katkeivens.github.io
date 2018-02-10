@@ -1,3 +1,5 @@
+# Bamazon
+
 This node app is an Amazon-like storefront that utilizes MySQL.  This app takes orders from customers and depletes stock from the store's inventory.  If there is not enough inventory to fulfill the customer's request, it will return with an insufficient quantity.
 
 At the beginning of the app, a full list of items will display
