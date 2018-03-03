@@ -179,11 +179,12 @@ h3,
 }
 
 .work:nth-child(even) {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .work img {
   width: 100%;
+  height: auto;
   border: 0 none;
   opacity: 0.8;
 }
